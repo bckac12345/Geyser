@@ -42,13 +42,10 @@
 
     <build>
     <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-shade-plugin</artifactId>
-        <version>3.3.0</version>
-      </plugins>
-    <plugins>
-    <build>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-shade-plugin</artifactId>
+    </plugins>
+    </build>
 
     <repositories>
         <!-- Remove once maven-shade-plugin gets a stable release that supports Java 16 -->
