@@ -40,12 +40,19 @@
         <module>core</module>
     </modules>
 
-    <build>
-    <plugins>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-shade-plugin</artifactId>
-    </plugins>
-    </build>
+    <pluginRepositories>
+        <!-- Remove once maven-shade-plugin gets a stable release that supports Java 16 -->
+        <pluginRepository>
+            <id>opencollab-release-repo</id>
+            <url>https://repo.opencollab.dev/maven-releases/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
 
     <repositories>
         <!-- Remove once maven-shade-plugin gets a stable release that supports Java 16 -->
