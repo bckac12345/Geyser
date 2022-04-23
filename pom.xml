@@ -97,10 +97,10 @@
             <version>1.18.20</version>
             <scope>provided</scope>
         </dependency>
-    </dependencies>
-    <dependency>
+        <dependency>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-shade-plugin</artifactId>
             <version>3.3.0</version>
-    </dependency>
+        </dependency>
+    </dependencies>
 </project>
